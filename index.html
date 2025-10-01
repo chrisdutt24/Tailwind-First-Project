@@ -18,9 +18,56 @@
   </head>
 
   <body class="bg-white text-gray-800">
-    <header>
-      <img src="img/logo.png" alt="Yoga Studio Logo" />
-      <nav></nav>
+    <header
+      class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-yellow-100"
+    >
+      <div
+        class="container mx-auto flex flex-wrap items-center justify-between gap-4 px-6 py-4"
+      >
+        <a href="#hero" class="flex items-center" aria-label="Sunrise Yoga">
+          <img
+            src="img/logo.png"
+            alt="Yoga Studio Logo"
+            class="h-12 w-auto"
+          />
+        </a>
+        <nav aria-label="Main navigation">
+          <ul class="flex flex-wrap items-center gap-6 text-sm font-medium text-gray-700">
+            <li>
+              <a
+                href="#about"
+                class="transition-colors hover:text-yellow-600"
+              >
+                About Us
+              </a>
+            </li>
+            <li>
+              <a
+                href="#programs"
+                class="transition-colors hover:text-yellow-600"
+              >
+                Our Programm
+              </a>
+            </li>
+            <li>
+              <a
+                href="#team"
+                class="transition-colors hover:text-yellow-600"
+              >
+                Team
+              </a>
+            </li>
+            <li>
+              <a
+                href="#pricing"
+                class="transition-colors hover:text-yellow-600"
+              >
+                Membership Plans
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <!-- HERO SECTION -->
