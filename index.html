@@ -22,51 +22,57 @@
       class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-yellow-100"
     >
       <div
-        class="container mx-auto flex flex-wrap items-center justify-between gap-4 px-6 py-4"
+        class="container mx-auto flex items-center justify-between gap-4 px-6 py-4"
       >
         <a href="#hero" class="flex items-center" aria-label="Sunrise Yoga">
-          <img
-            src="img/logo.png"
-            alt="Yoga Studio Logo"
-            class="h-12 w-auto"
-          />
+          <img src="img/logo.png" alt="Yoga Studio Logo" class="h-12 w-auto" />
         </a>
-        <nav aria-label="Main navigation">
-          <ul class="flex flex-wrap items-center gap-6 text-sm font-medium text-gray-700">
-            <li>
-              <a
-                href="#about"
-                class="transition-colors hover:text-yellow-600"
-              >
-                About Us
-              </a>
-            </li>
-            <li>
-              <a
-                href="#programs"
-                class="transition-colors hover:text-yellow-600"
-              >
-                Our Programm
-              </a>
-            </li>
-            <li>
-              <a
-                href="#team"
-                class="transition-colors hover:text-yellow-600"
-              >
-                Team
-              </a>
-            </li>
-            <li>
-              <a
-                href="#pricing"
-                class="transition-colors hover:text-yellow-600"
-              >
-                Membership Plans
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <div class="flex items-center gap-4">
+          <button
+            type="button"
+            class="md:hidden inline-flex flex-col items-center justify-center gap-1.5 rounded-full p-3 border border-yellow-200 bg-white/70 text-gray-800 shadow-sm hover:bg-yellow-50 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            aria-label="Menü öffnen"
+          >
+            <span class="block h-0.5 w-6 bg-gray-800"></span>
+            <span class="block h-0.5 w-6 bg-gray-800"></span>
+            <span class="block h-0.5 w-6 bg-gray-800"></span>
+          </button>
+          <nav class="hidden md:block" aria-label="Main navigation">
+            <ul
+              class="flex items-center gap-6 text-sm font-medium text-gray-700"
+            >
+              <li>
+                <a
+                  href="#about"
+                  class="transition-colors hover:text-yellow-600"
+                >
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#programs"
+                  class="transition-colors hover:text-yellow-600"
+                >
+                  Our Programm
+                </a>
+              </li>
+              <li>
+                <a href="#team" class="transition-colors hover:text-yellow-600">
+                  Team
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#pricing"
+                  class="transition-colors hover:text-yellow-600"
+                >
+                  Membership Plans
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
@@ -477,6 +483,31 @@
         </button>
       </section>
     </main>
-    <footer></footer>
+    <!-- Footer-->
+    <footer class="bg-white">
+      <div class="container mx-auto px-6 py-10 space-y-8">
+        <div class="flex flex-row items-start justify-between gap-6">
+          <div>
+            <h2 class="text-base font-semibold md:text-lg">Adresse</h2>
+            <p class="mt-2 text-xs sm:text-sm">Sunrise Yoga &amp; Meditation</p>
+            <p class="text-xs sm:text-sm">Morgenlichtstraße 12</p>
+            <p class="text-xs sm:text-sm">80469 München</p>
+          </div>
+          <div>
+            <h2 class="text-base font-semibold md:text-lg">Kontakt</h2>
+            <p class="mt-2 text-xs sm:text-sm">Telefon: +49 89 1234 5678</p>
+            <p class="text-xs sm:text-sm">E-Mail: hello@sunriseyoga.de</p>
+            <p class="text-xs sm:text-sm">Öffnungszeiten: Mo–Sa 6:00–18:00</p>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <img
+            src="img/logo.png"
+            alt="Sunrise Yoga Logo"
+            class="h-16 w-auto md:h-20"
+          />
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
