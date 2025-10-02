@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yoga Studio</title>
@@ -282,45 +282,52 @@
       </section>
 
       <!-- GALLERY -->
-      <section id="gallery" class="py-20 px-6 bg-yellow-50">
-        <div class="container mx-auto text-center">
-          <h2 class="text-3xl md:text-4xl font-semibold mb-10 text-yellow-600">
-            Gallery
-          </h2>
-          <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
-            <img
-              src="https://images.pexels.com/photos/1640770/pexels-photo-1640770.jpeg"
-              class="w-full h-40 object-cover rounded-lg shadow"
-              alt="Class 1"
-            />
-            <img
-              src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=600&q=80"
-              class="w-full h-40 object-cover rounded-lg shadow"
-              alt="Class 2"
-            />
-            <img
-              src="https://images.pexels.com/photos/39671/physiotherapy-weight-training-dumbbell-exercise-balls-39671.jpeg"
-              class="w-full h-40 object-cover rounded-lg shadow"
-              alt="Class 3"
-            />
-            <img
-              src="https://media.istockphoto.com/id/1464424101/photo/young-woman-in-black-bikini-in-yoga-position-underwater-in-diving-aquarium.jpg?b=1&s=612x612&w=0&k=20&c=2-EkDERWYfMXoIORpdce0nzUYdEotA9_Dgi9YEobceo="
-              class="w-full h-40 object-cover rounded-lg shadow"
-              alt="Studio"
-            />
-            <img
-              src="https://images.pexels.com/photos/4324101/pexels-photo-4324101.jpeg"
-              class="w-full h-40 object-cover rounded-lg shadow"
-              alt="Meditation"
-            />
-            <img
-              src="https://images.pexels.com/photos/8436581/pexels-photo-8436581.jpeg"
-              class="w-full h-40 object-cover rounded-lg shadow"
-              alt="Breathwork"
-            />
-          </div>
-        </div>
-      </section>
+      <section id="gallery__section">
+      <article
+        class="grid grid-cols-[2rem_repeat(2,_1fr)_2rem] grid-rows-[repeat(3,_auto)] md:grid-cols-[1fr_repeat(12,_calc((min(100%-2rem,_1200px)-11*1rem)/12)_1fr)]">
+        <figure class="relative col-start-1 -col-end-1 h-64">
+          <img class="object-cover w-full h-full" src="img/Jennie Walker Dupe.jpeg" alt="Gallery Image 1">
+          <figcaption
+            class="absolute bottom-3 left-8 z-10 pt-1.5 pr-2 pb-1.5 pl-2 bg-white-500/30 backdrop-blur-xs rounded-md text-xs leading-none text-white">
+            Photo by Jennie Walker</figcaption>
+        </figure>
+        <h2 class="col-start-2 -col-end-2 row-span-2 text-3xl mt-6 mb-2.5 md:text-4xl font-semibold md:mb-6 text-yellow-600">Jennie
+        Walker</h2>
+        <p class="col-start-2 -col-end-2 row-span-3 text-gray-700 leading-relaxed mb-8">Jennie is a certified yoga
+          instructor with over 10 years of
+          experience. She specializes in Vinyasa
+          and Hatha yoga, helping students find balance and strength in their practice.</p>
+      </article>
+      <article
+        class="grid grid-cols-[2rem_repeat(2,_1fr)_2rem] grid-rows-[repeat(3,_auto)] md:grid-cols-[1fr_repeat(12,_calc((min(100%-2rem,_1200px)-11*1rem)/12)_1fr)]">
+        <figure class="relative col-start-1 -col-end-1 h-64">
+          <img class="object-cover w-full h-full" src="img/Sophie A Dupe.jpeg" alt="Gallery Image 2">
+          <figcaption
+            class="absolute bottom-3 left-8 z-10 pt-1.5 pr-2 pb-1.5 pl-2 bg-white-500/30 backdrop-blur-xs rounded-md text-xs leading-none text-white">
+            Photo by Sophie A.</figcaption>
+        </figure>
+        <h2 class="col-start-2 -col-end-2 row-span-2 text-3xl mt-6 mb-2.5 md:text-4xl font-semibold md:mb-6 text-yellow-600">Sophie A.
+        </h2>
+        <p class="col-start-2 -col-end-2 row-span-3 text-gray-700 leading-relaxed mb-8">Sophie is a passionate yoga
+          instructor with a focus on mindfulness and meditation. She believes in
+          the transformative power of yoga to heal the mind and body.</p>
+      </article>
+      <article
+        class="grid grid-cols-[2rem_repeat(2,_1fr)_2rem] grid-rows-[repeat(3,_auto)] md:grid-cols-[1fr_repeat(12,_calc((min(100%-2rem,_1200px)-11*1rem)/12)_1fr)]">
+        <figure class="relative col-start-1 -col-end-1 h-64">
+          <img class="object-cover w-full h-full" src="img/Hannah Newberry Dupe.jpeg" alt="Gallery Image 3">
+          <figcaption
+            class="absolute bottom-3 left-8 z-10 pt-1.5 pr-2 pb-1.5 pl-2 bg-white-500/30 backdrop-blur-xs rounded-md text-xs leading-none text-white">
+            Photo by Hannah Newberry</figcaption>
+        </figure>
+        <h2 class="col-start-2 -col-end-2 row-span-2 text-3xl mt-6 mb-2.5 md:text-4xl font-semibold md:mb-6 text-yellow-600">Hannah
+          Newberry</h2>
+        <p class="col-start-2 -col-end-2 row-span-3 text-gray-700 leading-relaxed mb-8">Hannah is a certified yoga
+          instructor with over 10 years of experience. She specializes in Vinyasa
+          and Hatha yoga, helping students find balance and strength in their practice.</p>
+
+      </article>
+    </section>
 
       <!-- TEAM -->
       <section id="team" class="py-20 px-6 bg-white">
