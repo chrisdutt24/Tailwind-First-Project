@@ -1,520 +1,440 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yoga Studio</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- Import Poppins -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-    </style>
-  </head>
 
-  <body class="bg-white text-gray-800">
-    <header
-      class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-yellow-100"
-    >
-      <div
-        class="container mx-auto flex items-center justify-between gap-4 px-6 py-4"
-      >
-        <a href="#hero" class="flex items-center" aria-label="Sunrise Yoga">
-          <img src="img/logo.png" alt="Yoga Studio Logo" class="h-12 w-auto" />
-        </a>
-        <div class="flex items-center gap-4">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yoga Studio</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- Import Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800">
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-yellow-100">
+    <div class="container mx-auto flex items-center justify-between gap-4 px-6 py-4">
+      <a href="#hero" class="flex items-center" aria-label="Sunrise Yoga">
+        <img src="img/logo.png" alt="Yoga Studio Logo" class="h-12 w-auto" />
+      </a>
+      <div class="flex items-center gap-4">
+        <button type="button"
+          class="md:hidden inline-flex flex-col items-center justify-center gap-1.5 rounded-full p-3 border border-yellow-200 bg-white/70 text-gray-800 shadow-sm hover:bg-yellow-50 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          aria-label="Menü öffnen">
+          <span class="block h-0.5 w-6 bg-gray-800"></span>
+          <span class="block h-0.5 w-6 bg-gray-800"></span>
+          <span class="block h-0.5 w-6 bg-gray-800"></span>
+        </button>
+        <nav class="hidden md:block" aria-label="Main navigation">
+          <ul class="flex items-center gap-6 text-sm font-medium text-gray-700">
+            <li>
+              <a href="#about" class="transition-colors hover:text-yellow-600">
+                About Us
+              </a>
+            </li>
+            <li>
+              <a href="#programs" class="transition-colors hover:text-yellow-600">
+                Our Programm
+              </a>
+            </li>
+            <li>
+              <a href="#team" class="transition-colors hover:text-yellow-600">
+                Team
+              </a>
+            </li>
+            <li>
+              <a href="#pricing" class="transition-colors hover:text-yellow-600">
+                Membership Plans
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero"
+      class="relative min-h-screen flex flex-col items-center justify-center text-center bg-gradient-to-b from-yellow-100 to-orange-50 px-4">
+      <img src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3?auto=format&fit=crop&w=1400&q=80"
+        alt="Yoga at sunrise" class="absolute inset-0 w-full h-full object-cover opacity-30" />
+      <div class="relative z-10">
+        <h1 class="text-5xl md:text-6xl font-bold text-brown-800">
+          Sunrise Yoga & Meditation
+        </h1>
+        <p class="mt-6 text-lg md:text-xl text-brown-700 max-w-xl mx-auto">
+          Awaken your body, calm your mind, and find peace with the rising
+          sun.
+        </p>
+        <div class="mt-8 flex gap-4 justify-center">
           <button
-            type="button"
-            class="md:hidden inline-flex flex-col items-center justify-center gap-1.5 rounded-full p-3 border border-yellow-200 bg-white/70 text-gray-800 shadow-sm hover:bg-yellow-50 focus:outline-none focus:ring-2 focus:ring-yellow-400"
-            aria-label="Menü öffnen"
-          >
-            <span class="block h-0.5 w-6 bg-gray-800"></span>
-            <span class="block h-0.5 w-6 bg-gray-800"></span>
-            <span class="block h-0.5 w-6 bg-gray-800"></span>
+            class="px-6 py-3 bg-yellow-500 text-white font-medium rounded-full shadow hover:bg-yellow-600 transition">
+            Book a Class
           </button>
-          <nav class="hidden md:block" aria-label="Main navigation">
-            <ul
-              class="flex items-center gap-6 text-sm font-medium text-gray-700"
-            >
-              <li>
-                <a
-                  href="#about"
-                  class="transition-colors hover:text-yellow-600"
-                >
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#programs"
-                  class="transition-colors hover:text-yellow-600"
-                >
-                  Our Programm
-                </a>
-              </li>
-              <li>
-                <a href="#team" class="transition-colors hover:text-yellow-600">
-                  Team
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#pricing"
-                  class="transition-colors hover:text-yellow-600"
-                >
-                  Membership Plans
-                </a>
-              </li>
-            </ul>
-          </nav>
+          <button class="px-6 py-3 border border-yellow-500 text-yellow-600 rounded-full hover:bg-yellow-50 transition">
+            Explore Programs
+          </button>
         </div>
       </div>
-    </header>
-    <main>
-      <!-- HERO SECTION -->
-      <section
-        id="hero"
-        class="relative min-h-screen flex flex-col items-center justify-center text-center bg-gradient-to-b from-yellow-100 to-orange-50 px-4"
-      >
-        <img
-          src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3?auto=format&fit=crop&w=1400&q=80"
-          alt="Yoga at sunrise"
-          class="absolute inset-0 w-full h-full object-cover opacity-30"
-        />
-        <div class="relative z-10">
-          <h1 class="text-5xl md:text-6xl font-bold text-brown-800">
-            Sunrise Yoga & Meditation
-          </h1>
-          <p class="mt-6 text-lg md:text-xl text-brown-700 max-w-xl mx-auto">
-            Awaken your body, calm your mind, and find peace with the rising
-            sun.
+    </section>
+
+    <!-- ABOUT US -->
+    <section id="about" class="py-20 px-6 bg-white">
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-semibold mb-6 text-yellow-600">
+            About Us
+          </h2>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            At Sunrise Yoga and Meditation, we believe in starting the day
+            with purpose. Our tranquil studio blends modern wellness with
+            ancient practices, offering a sacred space to rejuvenate body and
+            mind.
           </p>
-          <div class="mt-8 flex gap-4 justify-center">
-            <button
-              class="px-6 py-3 bg-yellow-500 text-white font-medium rounded-full shadow hover:bg-yellow-600 transition"
-            >
-              Book a Class
-            </button>
-            <button
-              class="px-6 py-3 border border-yellow-500 text-yellow-600 rounded-full hover:bg-yellow-50 transition"
-            >
-              Explore Programs
-            </button>
-          </div>
+          <p class="text-gray-700 leading-relaxed">
+            From beginner yoga classes to immersive meditation retreats, we
+            welcome everyone seeking balance, clarity, and inner peace.
+          </p>
         </div>
-      </section>
+        <div>
+          <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80"
+            alt="Yoga Studio" class="w-full h-72 object-cover rounded-xl shadow" />
+        </div>
+      </div>
+    </section>
 
-      <!-- ABOUT US -->
-      <section id="about" class="py-20 px-6 bg-white">
-        <div
-          class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
-        >
-          <div>
-            <h2 class="text-3xl md:text-4xl font-semibold mb-6 text-yellow-600">
-              About Us
-            </h2>
-            <p class="text-gray-700 leading-relaxed mb-4">
-              At Sunrise Yoga and Meditation, we believe in starting the day
-              with purpose. Our tranquil studio blends modern wellness with
-              ancient practices, offering a sacred space to rejuvenate body and
-              mind.
-            </p>
-            <p class="text-gray-700 leading-relaxed">
-              From beginner yoga classes to immersive meditation retreats, we
-              welcome everyone seeking balance, clarity, and inner peace.
-            </p>
-          </div>
-          <div>
+    <!-- PROGRAMS -->
+    <section id="programs" class="py-20 px-6 bg-yellow-50">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-semibold mb-10 text-yellow-600">
+          Our Programs
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
             <img
-              src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80"
-              alt="Yoga Studio"
-              class="w-full h-72 object-cover rounded-xl shadow"
-            />
+              src="https://media.istockphoto.com/id/1198930471/photo/group-of-multi-ethnics-people-learning-yoga-class-in-fitness-club-female-caucasian-instructor.jpg?b=1&s=612x612&w=0&k=20&c=GxGbfBx3qo7onYQ_ol1EREpVFGK79Yklr-lXLQLC814="
+              alt="One-on-one yoga session" class="w-full h-40 object-cover rounded-lg mb-4" />
+            <h3 class="text-xl font-semibold text-brown-700">
+              1:1 Teacher Sessions
+            </h3>
+            <p class="text-gray-600 text-sm mt-2">
+              Personalized guidance in a private setting — perfect for
+              beginners or anyone who prefers individual attention over group
+              classes.
+            </p>
+          </div>
+          <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+            <img src="https://images.pexels.com/photos/34047468/pexels-photo-34047468.jpeg" alt="Yoga Basics"
+              class="w-full h-40 object-cover rounded-lg mb-4" />
+            <h3 class="text-xl font-semibold text-brown-700">Yoga Basics</h3>
+            <p class="text-gray-600 text-sm mt-2">
+              Perfect for beginners to build strength, flexibility, and
+              confidence.
+            </p>
+          </div>
+          <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+            <img src="https://images.pexels.com/photos/9004303/pexels-photo-9004303.jpeg" alt="Meditation"
+              class="w-full h-40 object-cover rounded-lg mb-4" />
+            <h3 class="text-xl font-semibold text-brown-700">
+              Meditation Workshops
+            </h3>
+            <p class="text-gray-600 text-sm mt-2">
+              Guided sessions to quiet the mind and cultivate mindfulness
+              daily.
+            </p>
+          </div>
+          <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+            <img src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3?auto=format&fit=crop&w=600&q=80"
+              alt="Retreats" class="w-full h-40 object-cover rounded-lg mb-4" />
+            <h3 class="text-xl font-semibold text-brown-700">
+              Weekend Retreats
+            </h3>
+            <p class="text-gray-600 text-sm mt-2">
+              Escape the routine and reset with immersive yoga, swimming &
+              meditation retreats.
+            </p>
+          </div>
+          <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+            <img src="https://images.pexels.com/photos/6958255/pexels-photo-6958255.jpeg" alt="Breathwork"
+              class="w-full h-40 object-cover rounded-lg mb-4" />
+            <h3 class="text-xl font-semibold text-brown-700">Breathwork</h3>
+            <p class="text-gray-600 text-sm mt-2">
+              Harness your breath to release tension and restore inner
+              balance.
+            </p>
+          </div>
+          <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+            <img src="https://images.pexels.com/photos/8173452/pexels-photo-8173452.jpeg" alt="Online Classes"
+              class="w-full h-40 object-cover rounded-lg mb-4" />
+            <h3 class="text-xl font-semibold text-brown-700">
+              Online Sessions
+            </h3>
+            <p class="text-gray-600 text-sm mt-2">
+              Join our community virtually with live-streamed classes anytime,
+              anywhere.
+            </p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- PROGRAMS -->
-      <section id="programs" class="py-20 px-6 bg-yellow-50">
-        <div class="container mx-auto text-center">
-          <h2 class="text-3xl md:text-4xl font-semibold mb-10 text-yellow-600">
-            Our Programs
-          </h2>
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            <div
-              class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition"
-            >
-              <img
-                src="https://media.istockphoto.com/id/1198930471/photo/group-of-multi-ethnics-people-learning-yoga-class-in-fitness-club-female-caucasian-instructor.jpg?b=1&s=612x612&w=0&k=20&c=GxGbfBx3qo7onYQ_ol1EREpVFGK79Yklr-lXLQLC814="
-                alt="One-on-one yoga session"
-                class="w-full h-40 object-cover rounded-lg mb-4"
-              />
-              <h3 class="text-xl font-semibold text-brown-700">
-                1:1 Teacher Sessions
-              </h3>
-              <p class="text-gray-600 text-sm mt-2">
-                Personalized guidance in a private setting — perfect for
-                beginners or anyone who prefers individual attention over group
-                classes.
-              </p>
-            </div>
-            <div
-              class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition"
-            >
-              <img
-                src="https://images.pexels.com/photos/34047468/pexels-photo-34047468.jpeg"
-                alt="Yoga Basics"
-                class="w-full h-40 object-cover rounded-lg mb-4"
-              />
-              <h3 class="text-xl font-semibold text-brown-700">Yoga Basics</h3>
-              <p class="text-gray-600 text-sm mt-2">
-                Perfect for beginners to build strength, flexibility, and
-                confidence.
-              </p>
-            </div>
-            <div
-              class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition"
-            >
-              <img
-                src="https://images.pexels.com/photos/9004303/pexels-photo-9004303.jpeg"
-                alt="Meditation"
-                class="w-full h-40 object-cover rounded-lg mb-4"
-              />
-              <h3 class="text-xl font-semibold text-brown-700">
-                Meditation Workshops
-              </h3>
-              <p class="text-gray-600 text-sm mt-2">
-                Guided sessions to quiet the mind and cultivate mindfulness
-                daily.
-              </p>
-            </div>
-            <div
-              class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3?auto=format&fit=crop&w=600&q=80"
-                alt="Retreats"
-                class="w-full h-40 object-cover rounded-lg mb-4"
-              />
-              <h3 class="text-xl font-semibold text-brown-700">
-                Weekend Retreats
-              </h3>
-              <p class="text-gray-600 text-sm mt-2">
-                Escape the routine and reset with immersive yoga, swimming &
-                meditation retreats.
-              </p>
-            </div>
-            <div
-              class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition"
-            >
-              <img
-                src="https://images.pexels.com/photos/6958255/pexels-photo-6958255.jpeg"
-                alt="Breathwork"
-                class="w-full h-40 object-cover rounded-lg mb-4"
-              />
-              <h3 class="text-xl font-semibold text-brown-700">Breathwork</h3>
-              <p class="text-gray-600 text-sm mt-2">
-                Harness your breath to release tension and restore inner
-                balance.
-              </p>
-            </div>
-            <div
-              class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition"
-            >
-              <img
-                src="https://images.pexels.com/photos/8173452/pexels-photo-8173452.jpeg"
-                alt="Online Classes"
-                class="w-full h-40 object-cover rounded-lg mb-4"
-              />
-              <h3 class="text-xl font-semibold text-brown-700">
-                Online Sessions
-              </h3>
-              <p class="text-gray-600 text-sm mt-2">
-                Join our community virtually with live-streamed classes anytime,
-                anywhere.
-              </p>
-            </div>
+    <!-- BENEFITS -->
+    <section id="benefits" class="py-20 px-6 bg-white">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-semibold mb-10 text-yellow-600">
+          Benefits of Yoga & Meditation
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+          <div class="p-6 bg-yellow-50 rounded-lg shadow">
+            🌿
+            <h3 class="font-semibold text-brown-700 mt-2">Stress Relief</h3>
+            <p class="text-sm text-gray-600 mt-1">
+              Release tension and calm your nervous system naturally.
+            </p>
+          </div>
+          <div class="p-6 bg-yellow-50 rounded-lg shadow">
+            🛌
+            <h3 class="font-semibold text-brown-700 mt-2">Better Sleep</h3>
+            <p class="text-sm text-gray-600 mt-1">
+              Unwind before bed and improve sleep quality with relaxation
+              techniques.
+            </p>
+          </div>
+          <div class="p-6 bg-yellow-50 rounded-lg shadow">
+            💪
+            <h3 class="font-semibold text-brown-700 mt-2">
+              Strength & Flexibility
+            </h3>
+            <p class="text-sm text-gray-600 mt-1">
+              Enhance physical health with gentle stretches and mindful
+              movement.
+            </p>
+          </div>
+          <div class="p-6 bg-yellow-50 rounded-lg shadow">
+            ☮
+            <h3 class="font-semibold text-brown-700 mt-2">Inner Peace</h3>
+            <p class="text-sm text-gray-600 mt-1">
+              Cultivate harmony and resilience in daily life through
+              meditation.
+            </p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- BENEFITS -->
-      <section id="benefits" class="py-20 px-6 bg-white">
-        <div class="container mx-auto text-center">
-          <h2 class="text-3xl md:text-4xl font-semibold mb-10 text-yellow-600">
-            Benefits of Yoga & Meditation
-          </h2>
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-            <div class="p-6 bg-yellow-50 rounded-lg shadow">
-              🌿
-              <h3 class="font-semibold text-brown-700 mt-2">Stress Relief</h3>
-              <p class="text-sm text-gray-600 mt-1">
-                Release tension and calm your nervous system naturally.
-              </p>
-            </div>
-            <div class="p-6 bg-yellow-50 rounded-lg shadow">
-              🛌
-              <h3 class="font-semibold text-brown-700 mt-2">Better Sleep</h3>
-              <p class="text-sm text-gray-600 mt-1">
-                Unwind before bed and improve sleep quality with relaxation
-                techniques.
-              </p>
-            </div>
-            <div class="p-6 bg-yellow-50 rounded-lg shadow">
-              💪
-              <h3 class="font-semibold text-brown-700 mt-2">
-                Strength & Flexibility
-              </h3>
-              <p class="text-sm text-gray-600 mt-1">
-                Enhance physical health with gentle stretches and mindful
-                movement.
-              </p>
-            </div>
-            <div class="p-6 bg-yellow-50 rounded-lg shadow">
-              ☮
-              <h3 class="font-semibold text-brown-700 mt-2">Inner Peace</h3>
-              <p class="text-sm text-gray-600 mt-1">
-                Cultivate harmony and resilience in daily life through
-                meditation.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- GALLERY -->
-      <section id="gallery__section">
+    <!-- GALLERY -->
+    <section id="gallery__section" class="md:space-y-24 md:py-20 bg-yellow-50">
       <article
-        class="grid grid-cols-[2rem_repeat(2,_1fr)_2rem] grid-rows-[repeat(3,_auto)] md:grid-cols-[1fr_repeat(12,_calc((min(100%-2rem,_1200px)-11*1rem)/12)_1fr)]">
-        <figure class="relative col-start-1 -col-end-1 h-64">
-          <img class="object-cover w-full h-full" src="img/Jennie Walker Dupe.jpeg" alt="Gallery Image 1">
+        class="grid grid-cols-[1.5rem_repeat(2,_1fr)_1.5rem] md:grid-cols-[1fr_repeat(12,_calc((min(100%-2rem,_1200px)-11*1rem)/12)_1fr)]">
+        <figure class="relative col-start-1 -col-end-1 md:col-end-14 h-[50vh] md:h-112">
+          <img class="object-cover w-full h-full rounded-lg md:rounded-l-none md:rounded-r-4xl md:shadow-2xl"
+            src="img/Jennie Walker Dupe.jpeg" alt="Gallery Image 1">
           <figcaption
-            class="absolute bottom-3 left-8 z-10 pt-1.5 pr-2 pb-1.5 pl-2 bg-white-500/30 backdrop-blur-xs rounded-md text-xs leading-none text-white">
+            class="absolute bottom-6 right-6 z-10 pt-1.5 pr-2 pb-1.5 pl-2 bg-white-500/30 md:bg-amber-800 backdrop-blur-xs rounded-md text-xs leading-none text-white">
             Photo by Jennie Walker</figcaption>
         </figure>
-        <h2 class="col-start-2 -col-end-2 row-span-2 text-3xl mt-6 mb-2.5 md:text-4xl font-semibold md:mb-6 text-yellow-600">Jennie
-        Walker</h2>
-        <p class="col-start-2 -col-end-2 row-span-3 text-gray-700 leading-relaxed mb-8">Jennie is a certified yoga
-          instructor with over 10 years of
-          experience. She specializes in Vinyasa
-          and Hatha yoga, helping students find balance and strength in their practice.</p>
+        <div
+          class="container h-full content-center space-y-4 pt-8 pb-12 col-start-2 md:col-start-16 -col-end-2 md:-col-end-4">
+          <h3 class="text-xl font-semibold text-brown-700">
+            A place to find your center</h3>
+          <p class="text-sm text-gray-700 leading-relaxed">In a serene environment, we offer a variety of classes to help you find balance and peace.</p>
+        </div>
       </article>
       <article
-        class="grid grid-cols-[2rem_repeat(2,_1fr)_2rem] grid-rows-[repeat(3,_auto)] md:grid-cols-[1fr_repeat(12,_calc((min(100%-2rem,_1200px)-11*1rem)/12)_1fr)]">
-        <figure class="relative col-start-1 -col-end-1 h-64">
-          <img class="object-cover w-full h-full" src="img/Sophie A Dupe.jpeg" alt="Gallery Image 2">
+        class="grid grid-cols-[1.5rem_repeat(2,_1fr)_1.5rem] md:grid-cols-[1fr_repeat(12,_calc((min(100%-2rem,_1200px)-11*1rem)/12)_1fr)]">
+        <figure class="relative col-start-1 md:col-start-13 -col-end-1 md:col-end-0 h-[50vh] md:h-112">
+          <img class="object-cover w-full h-full rounded-lg md:rounded-l-4xl md:rounded-r-none md:shadow-2xl"
+            src="img/Sophie A Dupe.jpeg" alt="Gallery Image 2">
           <figcaption
-            class="absolute bottom-3 left-8 z-10 pt-1.5 pr-2 pb-1.5 pl-2 bg-white-500/30 backdrop-blur-xs rounded-md text-xs leading-none text-white">
+            class="absolute bottom-6 right-6 z-10 pt-1.5 pr-2 pb-1.5 pl-2 bg-white-500/30 backdrop-blur-xs rounded-md text-xs leading-none text-white">
             Photo by Sophie A.</figcaption>
         </figure>
-        <h2 class="col-start-2 -col-end-2 row-span-2 text-3xl mt-6 mb-2.5 md:text-4xl font-semibold md:mb-6 text-yellow-600">Sophie A.
-        </h2>
-        <p class="col-start-2 -col-end-2 row-span-3 text-gray-700 leading-relaxed mb-8">Sophie is a passionate yoga
-          instructor with a focus on mindfulness and meditation. She believes in
-          the transformative power of yoga to heal the mind and body.</p>
+        <div
+          class="container h-full content-center space-y-4 pt-8 pb-12 col-start-2 md:col-start-4 -col-end-2 md:-col-end-16 row-start-2 md:row-start-1">
+          <h3 class="text-xl font-semibold text-brown-700">
+            We have anything you could need</h3>
+          <p class="text-sm text-gray-700 leading-relaxed">our studio is equipped with all the necessary tools and props to support your practice.</p>
+        </div>
       </article>
       <article
-        class="grid grid-cols-[2rem_repeat(2,_1fr)_2rem] grid-rows-[repeat(3,_auto)] md:grid-cols-[1fr_repeat(12,_calc((min(100%-2rem,_1200px)-11*1rem)/12)_1fr)]">
-        <figure class="relative col-start-1 -col-end-1 h-64">
-          <img class="object-cover w-full h-full" src="img/Hannah Newberry Dupe.jpeg" alt="Gallery Image 3">
+        class="grid grid-cols-[1.5rem_repeat(2,_1fr)_1.5rem] md:grid-cols-[1fr_repeat(12,_calc((min(100%-2rem,_1200px)-11*1rem)/12)_1fr)]">
+        <figure class="relative col-start-1 -col-end-1 md:col-end-14 h-[50vh] md:h-112">
+          <img class="object-cover w-full h-full rounded-lg md:rounded-l-none md:rounded-r-4xl md:shadow-2xl"
+            src="img/Hannah Newberry Dupe.jpeg" alt="Gallery Image 3">
           <figcaption
-            class="absolute bottom-3 left-8 z-10 pt-1.5 pr-2 pb-1.5 pl-2 bg-white-500/30 backdrop-blur-xs rounded-md text-xs leading-none text-white">
+            class="absolute bottom-6 right-6 z-10 pt-1.5 pr-2 pb-1.5 pl-2 bg-white-500/30 backdrop-blur-xs rounded-md text-xs leading-none text-white">
             Photo by Hannah Newberry</figcaption>
         </figure>
-        <h2 class="col-start-2 -col-end-2 row-span-2 text-3xl mt-6 mb-2.5 md:text-4xl font-semibold md:mb-6 text-yellow-600">Hannah
-          Newberry</h2>
-        <p class="col-start-2 -col-end-2 row-span-3 text-gray-700 leading-relaxed mb-8">Hannah is a certified yoga
-          instructor with over 10 years of experience. She specializes in Vinyasa
-          and Hatha yoga, helping students find balance and strength in their practice.</p>
-
+        <div
+          class="container h-full content-center space-y-4 pt-8 pb-12 col-start-2 md:col-start-16 -col-end-2 md:-col-end-4">
+          <h3 class="text-xl font-semibold text-brown-700">
+            World-class guru for excellent emotional support</h3>
+          <p class="text-sm text-gray-700 leading-relaxed">Our experienced instructor on four paws provides outstanding guidance to help you navigate your emotional landscape.</p>
+        </div>
       </article>
     </section>
 
-      <!-- TEAM -->
-      <section id="team" class="py-20 px-6 bg-white">
-        <div class="container mx-auto text-center">
-          <h2 class="text-3xl md:text-4xl font-semibold mb-10 text-yellow-600">
-            Meet Our Team
-          </h2>
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
-            <div
-              class="p-6 bg-yellow-50 rounded-xl shadow hover:shadow-lg transition"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?auto=format&fit=crop&w=400&q=80"
-                alt="Ava Johnson"
-                class="w-32 h-32 mx-auto mb-6 object-cover rounded-full shadow"
-              />
-              <h3 class="text-xl font-semibold text-brown-700">Tina Johnson</h3>
-              <p class="text-gray-600 mb-2">Yoga Instructor</p>
-              <p class="text-sm text-gray-600">
-                Specializes in Hatha Yoga with 10 years of teaching experience.
-              </p>
-            </div>
-            <div
-              class="p-6 bg-yellow-50 rounded-xl shadow hover:shadow-lg transition"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80"
-                alt="Liam Patel"
-                class="w-32 h-32 mx-auto mb-6 object-cover rounded-full shadow"
-              />
-              <h3 class="text-xl font-semibold text-brown-700">Peter Pan</h3>
-              <p class="text-gray-600 mb-2">Meditation Guide</p>
-              <p class="text-sm text-gray-600">
-                Helps students explore mindfulness and stress reduction
-                practices.
-              </p>
-            </div>
-            <div
-              class="p-6 bg-yellow-50 rounded-xl shadow hover:shadow-lg transition"
-            >
-              <img
-                src="https://media.istockphoto.com/id/1471845315/photo/happy-portrait-or-business-woman-taking-a-selfie-in-office-building-for-a-social-media.jpg?b=1&s=612x612&w=0&k=20&c=A5kpiV_WrshURTPtn3pGoMMZq8SiknQZ8ZIJyXcBCsM="
-                alt="Sophia Müller"
-                class="w-32 h-32 mx-auto mb-6 object-cover rounded-full shadow"
-              />
-              <h3 class="text-xl font-semibold text-brown-700">Julia Müller</h3>
-              <p class="text-gray-600 mb-2">Breathwork Specialist</p>
-              <p class="text-sm text-gray-600">
-                Guides transformative breathwork sessions to boost energy and
-                focus.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- TESTIMONIALS -->
-      <section id="testimonials" class="py-20 px-6 bg-yellow-50">
-        <div class="container mx-auto text-center">
-          <h2 class="text-3xl md:text-4xl font-semibold mb-10 text-yellow-600">
-            What Our Clients Say
-          </h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <blockquote class="p-6 bg-white rounded-lg shadow">
-              “This studio changed my mornings! The sunrise yoga is magical.”
-              <br />— Sarah W.
-            </blockquote>
-            <blockquote class="p-6 bg-white rounded-lg shadow">
-              “Meditation workshops helped me find clarity and balance.” <br />—
-              Tom R.
-            </blockquote>
-            <blockquote class="p-6 bg-white rounded-lg shadow">
-              “A calming, welcoming space with excellent teachers.” <br />— Nala
-              K.
-            </blockquote>
-            <blockquote class="p-6 bg-white rounded-lg shadow">
-              “Joining Sunrise Yoga & Meditation has been life-changing. I feel
-              calmer, stronger, and more present every single day.” <br />—
-              Kayla Fox.
-            </blockquote>
-          </div>
-        </div>
-      </section>
-
-      <!-- PRICING -->
-      <section id="pricing" class="py-20 px-6 bg-white">
-        <div class="container mx-auto text-center">
-          <h2 class="text-3xl md:text-4xl font-semibold mb-10 text-yellow-600">
-            Membership Plans
-          </h2>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div
-              class="p-8 bg-yellow-50 rounded-xl shadow hover:shadow-lg transition"
-            >
-              <h3 class="text-xl font-semibold text-brown-700">Drop-in</h3>
-              <p class="mt-2 text-gray-600">€10 / class</p>
-              <p class="text-sm text-gray-600 mt-2">
-                Join any class, no commitment.
-              </p>
-              <button
-                class="mt-6 px-6 py-3 bg-yellow-500 text-white rounded-full hover:bg-yellow-600 transition"
-              >
-                Join
-              </button>
-            </div>
-            <div
-              class="p-8 bg-yellow-50 rounded-xl shadow hover:shadow-lg transition"
-            >
-              <h3 class="text-xl font-semibold text-brown-700">Monthly</h3>
-              <p class="mt-2 text-gray-600">€40 / month</p>
-              <p class="text-sm text-gray-600 mt-2">
-                Unlimited studio classes every month.
-              </p>
-              <button
-                class="mt-6 px-6 py-3 bg-yellow-500 text-white rounded-full hover:bg-yellow-600 transition"
-              >
-                Subscribe
-              </button>
-            </div>
-            <div
-              class="p-8 bg-yellow-50 rounded-xl shadow hover:shadow-lg transition"
-            >
-              <h3 class="text-xl font-semibold text-brown-700">Unlimited</h3>
-              <p class="mt-2 text-gray-600">€80 / month</p>
-              <p class="text-sm text-gray-600 mt-2">
-                All classes + retreats at special member pricing.
-              </p>
-              <button
-                class="mt-6 px-6 py-3 bg-yellow-500 text-white rounded-full hover:bg-yellow-600 transition"
-              >
-                Best Value
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- FINAL CTA -->
-      <section
-        id="cta"
-        class="py-24 text-center bg-gradient-to-r from-yellow-200 to-orange-100"
-      >
-        <h2 class="text-4xl font-semibold mb-8 text-brown-800">
-          Start Your Journey Today
+    <!-- TEAM -->
+    <section id="team" class="py-20 px-6 bg-white">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-semibold mb-10 text-yellow-600">
+          Meet Our Team
         </h2>
-        <p class="max-w-xl mx-auto text-gray-700 mb-8">
-          Join our community of yogis and meditators, and bring balance,
-          clarity, and peace into your life.
-        </p>
-        <button
-          class="px-10 py-4 bg-yellow-500 text-white rounded-full shadow hover:bg-yellow-600 transition"
-        >
-          Join Sunrise Yoga
-        </button>
-      </section>
-    </main>
-    <!-- Footer-->
-    <footer class="bg-white">
-      <div class="container mx-auto px-6 py-10 space-y-8">
-        <div class="flex flex-row items-start justify-between gap-6">
-          <div>
-            <h2 class="text-base font-semibold md:text-lg">Adresse</h2>
-            <p class="mt-2 text-xs sm:text-sm">Sunrise Yoga &amp; Meditation</p>
-            <p class="text-xs sm:text-sm">Morgenlichtstraße 12</p>
-            <p class="text-xs sm:text-sm">80469 München</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
+          <div class="p-6 bg-yellow-50 rounded-xl shadow hover:shadow-lg transition">
+            <img src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?auto=format&fit=crop&w=400&q=80"
+              alt="Ava Johnson" class="w-32 h-32 mx-auto mb-6 object-cover rounded-full shadow" />
+            <h3 class="text-xl font-semibold text-brown-700">Tina Johnson</h3>
+            <p class="text-gray-600 mb-2">Yoga Instructor</p>
+            <p class="text-sm text-gray-600">
+              Specializes in Hatha Yoga with 10 years of teaching experience.
+            </p>
           </div>
-          <div>
-            <h2 class="text-base font-semibold md:text-lg">Kontakt</h2>
-            <p class="mt-2 text-xs sm:text-sm">Telefon: +49 89 1234 5678</p>
-            <p class="text-xs sm:text-sm">E-Mail: hello@sunriseyoga.de</p>
-            <p class="text-xs sm:text-sm">Öffnungszeiten: Mo–Sa 6:00–18:00</p>
+          <div class="p-6 bg-yellow-50 rounded-xl shadow hover:shadow-lg transition">
+            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80"
+              alt="Liam Patel" class="w-32 h-32 mx-auto mb-6 object-cover rounded-full shadow" />
+            <h3 class="text-xl font-semibold text-brown-700">Peter Pan</h3>
+            <p class="text-gray-600 mb-2">Meditation Guide</p>
+            <p class="text-sm text-gray-600">
+              Helps students explore mindfulness and stress reduction
+              practices.
+            </p>
           </div>
-        </div>
-        <div class="flex justify-center">
-          <img
-            src="img/logo.png"
-            alt="Sunrise Yoga Logo"
-            class="h-16 w-auto md:h-20"
-          />
+          <div class="p-6 bg-yellow-50 rounded-xl shadow hover:shadow-lg transition">
+            <img
+              src="https://media.istockphoto.com/id/1471845315/photo/happy-portrait-or-business-woman-taking-a-selfie-in-office-building-for-a-social-media.jpg?b=1&s=612x612&w=0&k=20&c=A5kpiV_WrshURTPtn3pGoMMZq8SiknQZ8ZIJyXcBCsM="
+              alt="Sophia Müller" class="w-32 h-32 mx-auto mb-6 object-cover rounded-full shadow" />
+            <h3 class="text-xl font-semibold text-brown-700">Julia Müller</h3>
+            <p class="text-gray-600 mb-2">Breathwork Specialist</p>
+            <p class="text-sm text-gray-600">
+              Guides transformative breathwork sessions to boost energy and
+              focus.
+            </p>
+          </div>
+          <div class="p-6 bg-yellow-50 rounded-xl shadow hover:shadow-lg transition">
+            <img
+              src="https://heronscrossing.vet/wp-content/uploads/Golden-Retriever-1024x683.jpg"
+              alt="Doug" class="w-32 h-32 mx-auto mb-6 object-cover rounded-full shadow" />
+            <h3 class="text-xl font-semibold text-brown-700">Doug</h3>
+            <p class="text-gray-600 mb-2">Feel-good Manager</p>
+            <p class="text-sm text-gray-600">
+              Ensures a positive and uplifting environment for all clients.
+            </p>
+          </div>
         </div>
       </div>
-    </footer>
-  </body>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="py-20 px-6 bg-yellow-50">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-semibold mb-10 text-yellow-600">
+          What Our Clients Say
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <blockquote class="p-6 bg-white rounded-lg shadow">
+            “This studio changed my mornings! The sunrise yoga is magical.”
+            <br />— Sarah W.
+          </blockquote>
+          <blockquote class="p-6 bg-white rounded-lg shadow">
+            “Meditation workshops helped me find clarity and balance.” <br />—
+            Tom R.
+          </blockquote>
+          <blockquote class="p-6 bg-white rounded-lg shadow">
+            “A calming, welcoming space with excellent teachers.” <br />— Nala
+            K.
+          </blockquote>
+          <blockquote class="p-6 bg-white rounded-lg shadow">
+            “Joining Sunrise Yoga & Meditation has been life-changing. I feel
+            calmer, stronger, and more present every single day.” <br />—
+            Kayla Fox.
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="py-20 px-6 bg-white">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-semibold mb-10 text-yellow-600">
+          Membership Plans
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="p-8 bg-yellow-50 rounded-xl shadow hover:shadow-lg transition">
+            <h3 class="text-xl font-semibold text-brown-700">Drop-in</h3>
+            <p class="mt-2 text-gray-600">€10 / class</p>
+            <p class="text-sm text-gray-600 mt-2">
+              Join any class, no commitment.
+            </p>
+            <button class="mt-6 px-6 py-3 bg-yellow-500 text-white rounded-full hover:bg-yellow-600 transition">
+              Join
+            </button>
+          </div>
+          <div class="p-8 bg-yellow-50 rounded-xl shadow hover:shadow-lg transition">
+            <h3 class="text-xl font-semibold text-brown-700">Monthly</h3>
+            <p class="mt-2 text-gray-600">€40 / month</p>
+            <p class="text-sm text-gray-600 mt-2">
+              Unlimited studio classes every month.
+            </p>
+            <button class="mt-6 px-6 py-3 bg-yellow-500 text-white rounded-full hover:bg-yellow-600 transition">
+              Subscribe
+            </button>
+          </div>
+          <div class="p-8 bg-yellow-50 rounded-xl shadow hover:shadow-lg transition">
+            <h3 class="text-xl font-semibold text-brown-700">Unlimited</h3>
+            <p class="mt-2 text-gray-600">€80 / month</p>
+            <p class="text-sm text-gray-600 mt-2">
+              All classes + retreats at special member pricing.
+            </p>
+            <button class="mt-6 px-6 py-3 bg-yellow-500 text-white rounded-full hover:bg-yellow-600 transition">
+              Best Value
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section id="cta" class="py-24 text-center bg-gradient-to-r from-yellow-200 to-orange-100">
+      <h2 class="text-4xl font-semibold mb-8 text-brown-800">
+        Start Your Journey Today
+      </h2>
+      <p class="max-w-xl mx-auto text-gray-700 mb-8">
+        Join our community of yogis and meditators, and bring balance,
+        clarity, and peace into your life.
+      </p>
+      <button class="px-10 py-4 bg-yellow-500 text-white rounded-full shadow hover:bg-yellow-600 transition">
+        Join Sunrise Yoga
+      </button>
+    </section>
+  </main>
+  <!-- Footer-->
+  <footer class="bg-white">
+    <div class="container mx-auto px-6 py-10 space-y-8">
+      <div class="flex flex-row items-start justify-between gap-6">
+        <div>
+          <h2 class="text-base font-semibold md:text-lg">Adresse</h2>
+          <p class="mt-2 text-xs sm:text-sm">Sunrise Yoga &amp; Meditation</p>
+          <p class="text-xs sm:text-sm">Morgenlichtstraße 12</p>
+          <p class="text-xs sm:text-sm">80469 München</p>
+        </div>
+        <div>
+          <h2 class="text-base font-semibold md:text-lg">Kontakt</h2>
+          <p class="mt-2 text-xs sm:text-sm">Telefon: +49 89 1234 5678</p>
+          <p class="text-xs sm:text-sm">E-Mail: hello@sunriseyoga.de</p>
+          <p class="text-xs sm:text-sm">Öffnungszeiten: Mo–Sa 6:00–18:00</p>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <img src="img/logo.png" alt="Sunrise Yoga Logo" class="h-16 w-auto md:h-20" />
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
